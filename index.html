@@ -71,52 +71,53 @@ h2{
   background:#ecfdf3;
   border-radius:12px;
   display:none;
-}
-footer{
+} footer{
   text-align:center;
   margin-top:25px;
   color:#777;
   font-size:14px;
-  
+}
+
+/* ===== COVER IMAGE ===== */
 .cover-img{
   height:260px;
-  background:url("phy.png");
+  background-image:url("phy.png");
   background-size:cover;
   background-position:center;
-  border-radius:14px;
-  margin-bottom:25px;
+  border-radius:16px;
+  margin-bottom:30px;
   position:relative;
 }
+
 .overlay{
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.55);
-  color:white;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  border-radius:14px;
   text-align:center;
+  border-radius:16px;
 }
 
 .overlay h1{
-  font-size:32px;
+  font-size:34px;
   margin:0;
 }
 
 .overlay p{
   font-size:18px;
-  margin:8px 0;
-  opacity:0.9;
+  margin:6px 0;
 }
 
 .overlay span{
   margin-top:10px;
-  padding:6px 14px;
-  background:rgba(255,255,255,0.2);
+  padding:6px 16px;
+  background:rgba(255,255,255,0.25);
   border-radius:20px;
-  font-size:15px;
+  font-size:14px;
 }
 
 }
@@ -125,23 +126,25 @@ footer{
 
 <body>
 
-<h1>Class IX Physics MCQs</h1>
-    <p>Sindh Textbook Board</p>
-    <span>Prepared by Irfan Ali</span>
+<div class="quiz-box">
 
-<div id="quiz"></div>
-<div class="cover-img">
-  <div class="overlay">
-    
+  <div class="cover-img">
+    <div class="overlay">
+      <h1>Class IX Physics MCQs</h1>
+      <p>Sindh Textbook Board</p>
+      <span>Prepared by Irfan Ali</span>
+    </div>
   </div>
+
+  <div id="quiz"></div>
+  <div id="score"></div>
+
+  <footer>
+    © Free Online Practice – Physics Class IX
+  </footer>
+
 </div>
 
-<div id="score"></div>
-
-<footer>
-© Free Online Practice – Physics Class IX
-</footer>
-</div>
 
 <script>
 const quizData = [
