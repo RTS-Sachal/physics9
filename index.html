@@ -77,15 +77,47 @@ footer{
   margin-top:25px;
   color:#777;
   font-size:14px;
+  .cover-img{
+  height:260px;
+  background:url("https://images.unsplash.com/photo-1507413245164-6160d8298b31");
+  background-size:cover;
+  background-position:center;
+  border-radius:14px;
+  margin-bottom:25px;
+  position:relative;
+}
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:14px;
+}
+.overlay h1{ font-size:34px; }
+.overlay span{
+  margin-top:10px;
+  padding:6px 14px;
+  background:rgba(255,255,255,0.2);
+  border-radius:20px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
-<div class="quiz-box">
-<h1>Class IX Physics MCQs</h1>
-<h2>Sindh Textbook Board<br>Prepared by <b>Irfan Ali</b></h2>
+<div class="cover-img">
+  <div class="overlay">
+    <h1>Class IX Physics MCQs</h1>
+    <p>Sindh Textbook Board</p>
+    <span>Prepared by Irfan Ali</span>
+  </div>
+</div>
 
 <div id="quiz"></div>
 
